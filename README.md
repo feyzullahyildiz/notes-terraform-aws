@@ -23,9 +23,11 @@ Notlar:
 - [03](./03/README.md)
     - AWS arayüzdünden Security Group ve inbounds rule ekleme
     - instace'ın içinden erişilen apiler
-- [04](./03/README.md)
+- [04](./04/README.md)
     - Security Group
     - Variables
     - Output
     - Search AMI by name
-    - 
+- [05](./05/README.md)
+    - meta args like count and count.index
+    - variable types in a list.
