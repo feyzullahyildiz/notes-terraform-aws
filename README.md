@@ -32,3 +32,24 @@ Notlar:
     - meta args like count and count.index
     - variable types in a list.
     - availability zones
+    - `aws_ec2_instance_type_offerings`
+    - filter with `aws ec2` cli
+
+
+
+# Sorular
+- availability-zone vs location. Bunlar aynı şey mi
+    - her regiona ait az'ler var ve suffix olarak a, b ile başlıyor ve devamı oluyor çoğunlukla
+    - AZ ile location aynı şeymi acaba ???
+    - Galiba location diye birşey yok. Şu komut kafa karıştırıyor.
+        - ```t
+            aws ec2 describe-instance-type-offerings --location-type availability-zone  --filters Name=instance-type,Values=t3.micro --region us-east-1 --output table
+          ```
+    - us-east-1 için bazı AZ'ler yada locationlar
+        - us-east-1a
+        - us-east-1b
+        - us-east-1f
+        - us-east-1c
+        - us-east-1d
+- availability-zone'ın olayı ne ? Ne işe yarıyor. Hangi resource'lar AZ'ye ihtiyacı var, hangi resourceların region'a ihtiyacı var
+- 

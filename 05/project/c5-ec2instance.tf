@@ -1,3 +1,4 @@
+# https://developer.hashicorp.com/terraform/language/meta-arguments/for_each#basic-syntax
 data "aws_availability_zones" "my_azones" {
   # names - List of the Availability Zone names available to the account.
   filter {

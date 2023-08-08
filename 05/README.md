@@ -1,5 +1,6 @@
 ## [<- Geri](../README.md)
 
+[project2_supported_instance_type_per_az_in_a_region](./project2_supported_instance_type_per_az_in_a_region/README.md)
 # Notes
 - variable types
     - map(string)
