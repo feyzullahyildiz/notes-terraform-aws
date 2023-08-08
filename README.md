@@ -31,3 +31,4 @@ Notlar:
 - [05](./05/README.md)
     - meta args like count and count.index
     - variable types in a list.
+    - availability zones
