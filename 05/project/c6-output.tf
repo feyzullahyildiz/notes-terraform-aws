@@ -1,9 +1,6 @@
-output "instance_public_ip" {
-    description = "EC2 Public IP"
-    value = aws_instance.myec2.public_ip
-}
+# OUTPUT - For Loop with List
 
-output "instance_public_dns" {
-    description = "EC2 Public DNS"
-    value = aws_instance.myec2.public_dns
+output "for_output_list" {
+    description = "For loop with List"
+    value = [for instance in aws_instance.myec2: instance.public_dns]
 }

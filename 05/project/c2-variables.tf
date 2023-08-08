@@ -17,3 +17,19 @@ variable "instance_keypair" {
   type        = string
   default     = "terraform-key"
 }
+
+variable "instance_type_list" {
+  description = "EC2 Instance Type list"
+  type        = list(string)
+  default     = ["t3.micro", "t3.small"]
+}
+
+variable "instance_type_map" {
+  description = "EC2 Instance Type Map"
+  type        = map(string)
+  default = {
+    dev  = "t3.micro"
+    qa   = "t3.small"
+    prod = "t3.large"
+  }
+}
