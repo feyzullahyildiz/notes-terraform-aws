@@ -32,8 +32,11 @@ Notlar:
     - meta args like count and count.index
     - variable types in a list.
     - availability zones
-    - `aws_ec2_instance_type_offerings`
+    - `aws_ec2_instance_type_offerings` `aws_availability_zones`
     - filter with `aws ec2` cli
+    - Region'a göre AZ listeleme. EC2 support listeme.
+    - Arrayde length kontrolü
+    - Map to MapValues
 
 
 
