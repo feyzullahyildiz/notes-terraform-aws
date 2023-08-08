@@ -2,6 +2,13 @@
 
 [project2_supported_instance_type_per_az_in_a_region](./project2_supported_instance_type_per_az_in_a_region/README.md)
 # Notes
+- project ile project2'yi birleştirirsek eğer şunları yaptık
+    - otomatik ami aldık
+    - region'a göre tüm AZ'leri listeledik
+    - bu AZ'lerde bazı intance-type lar desteklenmiyor.
+    - t3.micro desteklenen AZ'leri bulduk. (us-east-1e'de t3.micro yok)
+    - Desteklenen her AZ içinde bir tane EC2 instace'ı açtık
+    - Ve bunların hepsini dinamik bir şekilde yaptık
 - variable types
     - map(string)
     - ```

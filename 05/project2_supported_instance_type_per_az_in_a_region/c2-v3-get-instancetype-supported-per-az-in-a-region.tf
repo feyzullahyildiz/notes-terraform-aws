@@ -21,6 +21,7 @@ output "log_az" {
   value = data.aws_availability_zones.my_availability_zones.names
 }
 
+# İsimlendirme burada çok kötü. Buradaki AZ'lere göre instace-type varmı onu soruyoruz.
 data "aws_ec2_instance_type_offerings" "ec2_list" {
   for_each = toset(data.aws_availability_zones.my_availability_zones.names)
   filter {
