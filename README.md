@@ -44,6 +44,9 @@ Notlar:
 
 
 # Sorular
+- High Availability, Reliability nedir
+    - High Availability: bir sistemde arıza olsa bile kesintisiz şekilde çalışmabilmesi yeteneği.
+    - Reliability: istikrarlı çalışma yeteneği
 - availability-zone vs location. Bunlar aynı şey mi
     - her regiona ait az'ler var ve suffix olarak a, b ile başlıyor ve devamı oluyor çoğunlukla
     - AZ ile location aynı şeymi acaba ???

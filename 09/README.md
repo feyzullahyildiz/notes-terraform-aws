@@ -1,6 +1,7 @@
 ## [<- Geri](../README.md)
 
 https://github.com/stacksimplify/kubernetes-fundamentals
+- [ReplicatSet](./replicatset/README.md)
 # Kubernetes
 - Master Node
     - etcd
