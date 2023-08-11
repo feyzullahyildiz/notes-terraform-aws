@@ -63,3 +63,23 @@ EKS lets us focus on Application Workloads. We dont need to anything on the belo
 # Soru Cevap
 - Can we have multi container in a single pod
     - yes. %99 you should not do that
+
+# Kullanım
+- nodes
+    - kubectl get nodes
+    - kubectl get nodes -o wide
+- pods
+    - kubectl get pods -o wide
+- describe
+    - kubectl describe pod POD_NAME
+- logs
+
+### Ne oldu
+- `kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0`
+    - `kubectl describe pod my-first-pod`
+    - Kubernetes created a pod
+    - Pulled the docker image from docker hub
+    - Created the container in the pod
+    - Started the container present in the pod
+## Notlar
+- Bir pod'a dışarıdan erişmek istiyorsak service kullanmalıyız
