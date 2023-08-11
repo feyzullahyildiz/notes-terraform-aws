@@ -5,6 +5,8 @@ https://github.com/stacksimplify/kubernetes-fundamentals
 - [ReplicaSet (09-12-replicaset)](./09-12-replicaset/README.md)
 - [Deployment Introduction (09-13-deployment-introduction)](./09-13-deployment-introduction/README.md)
 - [Deployment Demo (09-14-deployment)](./09-14-deployment/README.md)
+- [Deployment Updates (09-15-deployment)](./09-15-deployment-updates/README.md)
+- [Deployment EDIT (09-16-deployment)](./09-16-deployment-edit/README.md)
 # Kubernetes
 - Master Node
     - etcd
