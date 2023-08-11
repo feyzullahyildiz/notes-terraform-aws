@@ -70,10 +70,13 @@ EKS lets us focus on Application Workloads. We dont need to anything on the belo
     - kubectl get nodes -o wide
 - pods
     - kubectl get pods -o wide
+    - kubectl get pod `my-first-pod` -o yaml
 - describe
     - kubectl describe pod POD_NAME
 - logs
-
+    - `kubectl logs my-first-pod`
+- service
+- expose
 ### Ne oldu
 - `kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0`
     - `kubectl describe pod my-first-pod`
@@ -83,3 +86,36 @@ EKS lets us focus on Application Workloads. We dont need to anything on the belo
     - Started the container present in the pod
 ## Notlar
 - Bir pod'a dışarıdan erişmek istiyorsak service kullanmalıyız
+
+### Port Açma (kubectl service expose)
+- `kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0`
+- `kubectl expose pod my-first-pod --type=NodePort --port=80 --name=my-first-service`
+    - Bu image 80 portunu dinliyor. expose port 80
+- `kubectl get services` || `kubectl get svc`
+```
+NAME               TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+kubernetes         ClusterIP   10.96.0.1        <none>        443/TCP        20h
+my-first-service   NodePort    10.103.213.165   <none>        80:31457/TCP   13s
+```
+- Tüm nodeların bu portu açık ve hepsi bu pod'a gidiyor
+- PORTLAR
+    - 3 tane port var. :D
+        - Target port (container'ın dinlediği port. Dockerfile EXPOSE)
+        - Port (Dışarıya bind ettiğimiz port)
+        - Dışarıdan istek yaparkenki k8s'in otomatik atadığı port.
+    - `kubectl expose pod ...` yazarken 2 port parametresi veriyoruz
+        - `--port`(Zorunlu) ve `--target-port`
+        - `--target-port` değeri image'ın içindeki port değeri ile aynı olmalı, yoksa ulaşmamız mümkün değil
+        - Atıyorum nginx image'ı var (80 dinler)
+            - düzgün çalışması için `target-port` değeri 80 olmak zorunda. Ama port değerini 81 yapabiliriz
+        - Eğer ki `target-port` vermezisek, `port` değeri ile aynı oluyor.
+    - 3. PORT ise, k8s tarafından 30000-32767 arasında verilen rastgele olan bir port. Dış dünyadan gelirken bunu kullanmalıyız
+
+### Logs
+- `kubectl logs my-first-pod`
+- `kubectl logs -f my-first-pod`
+
+### Exec
+- `kubectl exec -ti my-first-pod -- /bin/bash`
+
+
