@@ -37,7 +37,10 @@ Notlar:
     - Region'a göre AZ listeleme. EC2 support listeme.
     - Arrayde length kontrolü
     - Map to MapValues
-
+- [06](./06/README.md)
+- [07](./07/README.md)
+- 08 izlemedim, 9'a geçtim
+- [09 k8s](./09/README.md)
 
 
 # Sorular
