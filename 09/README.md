@@ -1,7 +1,10 @@
 ## [<- Geri](../README.md)
 
 https://github.com/stacksimplify/kubernetes-fundamentals
-- [ReplicatSet](./replicatset/README.md)
+- [ReplicaSet (09-11-replicaset) Yaml dosyası var sadece](./09-11-replicaset/README.md)
+- [ReplicaSet (09-12-replicaset)](./09-12-replicaset/README.md)
+- [Deployment Introduction (09-13-deployment-introduction)](./09-13-deployment-introduction/README.md)
+- [Deployment Demo (09-14-deployment)](./09-14-deployment/README.md)
 # Kubernetes
 - Master Node
     - etcd
