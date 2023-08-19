@@ -10,6 +10,7 @@ https://github.com/stacksimplify/kubernetes-fundamentals
 - [Deployment ROLLBACK (09-17-rollback)](./09-17-rollback/README.md)
 - [Deployment Resume Pause (09-18-deployment-resume-pause)](./09-18-deployment-resume-pause/README.md)
 - [Service TYPES (09-19-service-types)](./09-19-service-types/README.md)
+- [Service TYPES Demo (09-20-service-demo)](./09-20-service-demo/README.md)
 # Kubernetes
 - Master Node
     - etcd
