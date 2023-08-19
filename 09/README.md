@@ -13,6 +13,9 @@ https://github.com/stacksimplify/kubernetes-fundamentals
 - [Service TYPES Demo (09-20-service-demo)](./09-20-service-demo/README.md)
 - 09-21 Passed
 - [Yaml (09-22-yaml-basics)](./09-22-yaml-basics/README.md)
+- [Yaml ile POD oluşturma (09-23-pods-with-yaml)](./09-23-pods-with-yaml/README.md)
+    - Docs URL
+-
 # Kubernetes
 - Master Node
     - etcd
