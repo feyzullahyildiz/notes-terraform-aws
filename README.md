@@ -61,4 +61,5 @@ Notlar:
         - us-east-1c
         - us-east-1d
 - availability-zone'ın olayı ne ? Ne işe yarıyor. Hangi resource'lar AZ'ye ihtiyacı var, hangi resourceların region'a ihtiyacı var
-- `kubectl set image` için `--record=true` deprecated olmuş. Bu değeri vermeyince rollout historyde gözükmüyor, bu olayı çözeriz..
+- `kubectl set image` için `--record=true` deprecated olmuş. Bu değeri vermeyince rollout historyde gözükmüyor, bu olayı nasıl çözeriz..
+- k8s yaml dosyasında RS yada Deployment düşün. İçine template diye bir kısım giriyoruz ve burada pod için bir bölüm var. Pod'a neden ports diye bir kısım veriyoruz ve neden burada containerPort diye bir değer veriyoruz. Zaten bir service oluşturduğumuz zaman, port, targetPort ve nodePort diye 3 tane portumuz var. Bu ne ola, 4. port mu var ?

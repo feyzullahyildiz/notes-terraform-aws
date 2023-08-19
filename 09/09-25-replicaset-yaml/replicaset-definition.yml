@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myapp2-rs
+spec:
+  replicas: 3
+  selector:
+    matchLabels:    # Bu nereden çıktı karşim ya.
+      app: myapp2
+  template:         # Bundan sonrası pod ile aynı
+    metadata:
+      name: myapp2-pod
+      labels:
+        app: myapp2
+    spec:
+      containers:     # List
+        - name: myapp2-container
+          image: stacksimplify/kubenginx:1.0.0
+          ports:
+            - containerPort: 80
