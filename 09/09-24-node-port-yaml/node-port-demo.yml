@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapp-pod-nodeport-service
+  # labels:         # Bu ikisini sildi
+  #   app: myapp    # Bu ikisini sildi
+spec:
+  type: NodePort # LoadBalancer, #externalName or # ClusterIP
+  selector:
+    app: myapp      # Bu çok kritik galiba. Hangi POD|Replicaset vesairenin
+                    # labels.app değeri bu değer ile aynı ise ona eşleşiyor galiba
+                    # 
+  ports:
+    - name: http      # Required değilmiş.
+      port: 80        # Service Port
+      targetPort: 80  # Container Port
+      nodePort: 31231 # Node Port

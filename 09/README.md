@@ -15,6 +15,8 @@ https://github.com/stacksimplify/kubernetes-fundamentals
 - [Yaml (09-22-yaml-basics)](./09-22-yaml-basics/README.md)
 - [Yaml ile POD oluşturma (09-23-pods-with-yaml)](./09-23-pods-with-yaml/README.md)
     - Docs URL
+- [Yaml ile NodePort Service oluşturma (09-24-node-port-yaml)](./09-24-node-port-yaml/README.md)
+    - Burada hem service oluşturuyoruz. Hemde 09-23'de oluşturduğumuz pod'a bağlıyoruz. `selector` ile
 -
 # Kubernetes
 - Master Node
