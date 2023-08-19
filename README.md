@@ -61,4 +61,4 @@ Notlar:
         - us-east-1c
         - us-east-1d
 - availability-zone'ın olayı ne ? Ne işe yarıyor. Hangi resource'lar AZ'ye ihtiyacı var, hangi resourceların region'a ihtiyacı var
-- 
+- `kubectl set image` için `--record=true` deprecated olmuş. Bu değeri vermeyince rollout historyde gözükmüyor, bu olayı çözeriz..

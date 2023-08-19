@@ -7,6 +7,7 @@ https://github.com/stacksimplify/kubernetes-fundamentals
 - [Deployment Demo (09-14-deployment)](./09-14-deployment/README.md)
 - [Deployment Updates (09-15-deployment)](./09-15-deployment-updates/README.md)
 - [Deployment EDIT (09-16-deployment)](./09-16-deployment-edit/README.md)
+- [Deployment ROLLBACK (09-17-rollback)](./09-17-rollback/README.md)
 # Kubernetes
 - Master Node
     - etcd
