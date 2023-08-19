@@ -8,6 +8,8 @@ https://github.com/stacksimplify/kubernetes-fundamentals
 - [Deployment Updates (09-15-deployment)](./09-15-deployment-updates/README.md)
 - [Deployment EDIT (09-16-deployment)](./09-16-deployment-edit/README.md)
 - [Deployment ROLLBACK (09-17-rollback)](./09-17-rollback/README.md)
+- [Deployment Resume Pause (09-18-deployment-resume-pause)](./09-18-deployment-resume-pause/README.md)
+- [Service TYPES (09-19-service-types)](./09-19-service-types/README.md)
 # Kubernetes
 - Master Node
     - etcd
