@@ -11,6 +11,8 @@ https://github.com/stacksimplify/kubernetes-fundamentals
 - [Deployment Resume Pause (09-18-deployment-resume-pause)](./09-18-deployment-resume-pause/README.md)
 - [Service TYPES (09-19-service-types)](./09-19-service-types/README.md)
 - [Service TYPES Demo (09-20-service-demo)](./09-20-service-demo/README.md)
+- 09-21 Passed
+- [Yaml (09-22-yaml-basics)](./09-22-yaml-basics/README.md)
 # Kubernetes
 - Master Node
     - etcd
