@@ -21,6 +21,12 @@ https://github.com/stacksimplify/kubernetes-fundamentals
     - ReplicatSet `selector` ile Service `selector`'ün farklını burada görüyoruz. Neden böyle onu henüz anlamadım. Service için dümdüz verirken, ReplicatSet için `matchLabels` diye ayrı bir olay çıktı başımıza
 - [Yaml ile ReplicaSet ve NodePort (09-26-node-port-yaml)](./09-26-node-port-yaml/README.md)
 - [Yaml ile Deployment ve NodePort (09-27-create-deployments)](./09-27-create-deployments/README.md)
+- Bu 3 örnek bağlantılı. Frontend içindeki nginx ile backend'e proxy_pass yapmıştık. Bu onun yaml ile kullandığımız hali
+    - [Backend ClusterIP (09-28-backend-deployment-clusterip)](./09-28-backend-deployment-clusterip/README.md)
+    - [Frontend Deployment (09-29-fronend-backend-deployment)](./09-29-fronend-backend-deployment/README.md)
+    - [Tips (09-30-tips)](./09-30-tips/README.md)
+    
+
 
 # Kubernetes
 - Master Node
