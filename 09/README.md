@@ -19,6 +19,8 @@ https://github.com/stacksimplify/kubernetes-fundamentals
     - Burada hem service oluşturuyoruz. Hemde 09-23'de oluşturduğumuz pod'a bağlıyoruz. `selector` ile
 - [Yaml ile ReplicaSet oluşturma (09-25-replicaset-yaml)](./09-25-replicaset-yaml/README.md)
     - ReplicatSet `selector` ile Service `selector`'ün farklını burada görüyoruz. Neden böyle onu henüz anlamadım. Service için dümdüz verirken, ReplicatSet için `matchLabels` diye ayrı bir olay çıktı başımıza
+- [Yaml ile ReplicaSet ve NodePort (09-26-node-port-yaml)](./09-26-node-port-yaml/README.md)
+
 # Kubernetes
 - Master Node
     - etcd
