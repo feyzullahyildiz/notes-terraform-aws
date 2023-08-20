@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-dep3
+  labels:
+    app: myapp3
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: myapp3
+  template:
+    metadata:
+      name: frontend-app
+      labels:
+        app: myapp3
+    spec:
+      containers: # List
+        - name: kubenginx
+          image: stacksimplify/kubenginx:3.0.0
+          ports: # List
+            - containerPort: 80

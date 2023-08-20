@@ -20,6 +20,7 @@ https://github.com/stacksimplify/kubernetes-fundamentals
 - [Yaml ile ReplicaSet oluşturma (09-25-replicaset-yaml)](./09-25-replicaset-yaml/README.md)
     - ReplicatSet `selector` ile Service `selector`'ün farklını burada görüyoruz. Neden böyle onu henüz anlamadım. Service için dümdüz verirken, ReplicatSet için `matchLabels` diye ayrı bir olay çıktı başımıza
 - [Yaml ile ReplicaSet ve NodePort (09-26-node-port-yaml)](./09-26-node-port-yaml/README.md)
+- [Yaml ile Deployment ve NodePort (09-27-create-deployments)](./09-27-create-deployments/README.md)
 
 # Kubernetes
 - Master Node
