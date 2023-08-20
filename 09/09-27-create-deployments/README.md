@@ -9,3 +9,5 @@
 - `kubectl create -f 01-deployment.yml`
 - `kubectl create -f 02-nodeport.yml`
 - Buradaki tüm `labels` değerleri çok kıymetli. Çok hassas olabiliyorlar.
+# NOT:
+- Elemanın Deployment dosyasındaki ana *metadata'da labels* **YOK**.
