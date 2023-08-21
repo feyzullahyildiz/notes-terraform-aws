@@ -39,8 +39,8 @@ Notlar:
     - Map to MapValues
 - [06](./06/README.md)
 - [07](./07/README.md)
-- 08 izlemedim, 9'a geçtim
-- [09 k8s](./09/README.md)
+- [08](./08/README.md) EKS ile terraform
+- [09 Uçtan uca kubernetes](./09/README.md)
 
 
 # Sorular
