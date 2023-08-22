@@ -5,4 +5,8 @@
     - Genel hazırlıklar
     - ne öğreneceğiz, nasıl yapacağız
     - Büyük resimde neler var
-- [02](./01/README.md)
+- [01](./01/README.md)
+    - IAM Role EKS Cluster
+- [02](./02/README.md)
+    - IAM Role EKS Node Group
+
