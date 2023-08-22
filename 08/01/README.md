@@ -1,11 +1,11 @@
 ## [<- Geri](../README.md)
 [REPO terraform-on-aws-eks/08-AWS-EKS-Cluster-Basics](https://github.com/stacksimplify/terraform-on-aws-eks/tree/main/08-AWS-EKS-Cluster-Basics)
-# Ne yapacağız
+# EKS variables - EKS Cluster IAM Role [(Step 2-3)](https://github.com/stacksimplify/terraform-on-aws-eks/tree/main/08-AWS-EKS-Cluster-Basics)
 - Bunları oluşturacağız.
     - EKS Cluster IAM Role
     - EKS Cluster
-    - EKS Node Group IAM Role
-    - EKS Node Group
+    - EKS Node Group IAM Role           // Bu ikisi sonraki videoda
+    - EKS Node Group                    // Bu ikisi sonraki videoda
 - Network Interfaceler ve Security Grouplar kendiliğinden oluşacaklar
 - Repodan önceki sectionlarda oluşturduğumuz dosyaları alacağız
 - terraform tarafındaki bazı ayarlar
