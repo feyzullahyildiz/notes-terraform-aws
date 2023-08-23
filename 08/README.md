@@ -10,4 +10,7 @@
 - [02](./02/README.md)
     - IAM Role EKS Node Group
     - Burada role oluştururken `Version` diye bir flag var ve değeri `2012-10-17`. Bu ne şimdi. Bu dosyanın içinde bunun ile alakalı birşeyler yazıyor
+- [03](./03/README.md)
+    - EKS resource with role assignments.
+    - 
 
