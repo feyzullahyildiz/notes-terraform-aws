@@ -9,4 +9,5 @@
     - IAM Role EKS Cluster
 - [02](./02/README.md)
     - IAM Role EKS Node Group
+    - Burada role oluştururken `Version` diye bir flag var ve değeri `2012-10-17`. Bu ne şimdi. Bu dosyanın içinde bunun ile alakalı birşeyler yazıyor
 
