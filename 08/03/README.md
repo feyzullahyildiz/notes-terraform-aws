@@ -11,3 +11,5 @@
 - [terraform resources/eks_cluster](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_cluster.html)
 - [c5-06-eks-cluster.tf](./c5-06-eks-cluster.tf)
   - Burada gerekli resource tanımlamaları var.
+  - Notları bu dosyanın içine yazdım diyebilirim.
+

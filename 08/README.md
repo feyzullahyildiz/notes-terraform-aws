@@ -11,6 +11,9 @@
     - IAM Role EKS Node Group
     - Burada role oluştururken `Version` diye bir flag var ve değeri `2012-10-17`. Bu ne şimdi. Bu dosyanın içinde bunun ile alakalı birşeyler yazıyor
 - [03](./03/README.md)
-    - EKS resource with role assignments.
-    - 
+    - EKS cluster resource with role assignments.
+- [04](./04/README.md)
+    - EKS Node Group with role assignments
+    - public node group, private node group
+-
 
