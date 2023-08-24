@@ -15,5 +15,8 @@
 - [04](./04/README.md)
     - EKS Node Group with role assignments
     - public node group, private node group
--
+- [05](./05/README.md)
+    - Genel Review.
+    - EKS Cluster ve Node Group network ilişkisi özeti
+    - Private NodeGroup ve Nat gateway ilişkisi
 
