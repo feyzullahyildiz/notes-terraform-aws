@@ -19,4 +19,7 @@
     - Genel Review.
     - EKS Cluster ve Node Group network ilişkisi özeti
     - Private NodeGroup ve Nat gateway ilişkisi
+- [06 İlk Deploy](./06/README.md)
+    - 13 dk sürmüş işlem :D
+    - deploy sonrasında parametre kontrolleri
 
