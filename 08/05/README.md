@@ -1,6 +1,6 @@
 ## [<- Geri](../README.md)
 
-# Review variables and EKS Outputs
+# Review variables and EKS Outputs (STEP 9-10)
 
 - `eks.auto.tfvars` adında bir dosyamız var.
   - bunların hepsi variable olarak tanımlanmış oluyor (c5-01-eks-variables.tf).

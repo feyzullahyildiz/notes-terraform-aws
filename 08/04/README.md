@@ -1,6 +1,6 @@
 ## [<- Geri](../README.md)
 
-# EKS Node Group [(Step 7)](https://github.com/stacksimplify/terraform-on-aws-eks/tree/main/08-AWS-EKS-Cluster-Basics)
+# EKS Node Group [(Step 7-8)](https://github.com/stacksimplify/terraform-on-aws-eks/tree/main/08-AWS-EKS-Cluster-Basics)
 - resource "aws_eks_node_group" kullanacağız
 - [c5-07-eks-node-group-public.tf](c5-07-eks-node-group-public.tf) dosyasına notlarımı alıyorum.
 - [aws docs APIReference/API_Nodegroup.html](https://docs.aws.amazon.com/eks/latest/APIReference/API_Nodegroup.html)

@@ -1,6 +1,6 @@
 ## [<- Geri](../README.md)
 
-
+# Büyük Resim
 - Pre-requisite Resources (Önkoşul kaynaklar)
     - VPC
         - Subnets (Public / Private)

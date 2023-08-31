@@ -1,6 +1,6 @@
 ## [<- Geri](../README.md)
 
-# İlk Deploy
+# İlk Deploy (STEP 11-12)
 - Deployu gerçekleştirdik
 - outputlara bakıyoruz
     - `cluster_endpoint` Bu arkadaş bir url veriyor ki baya bi uzun.
