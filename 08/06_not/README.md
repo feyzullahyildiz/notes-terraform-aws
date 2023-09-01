@@ -1,0 +1,61 @@
+## [<- Geri](../README.md)
+
+# Genel özet, yorum ve dosyalar
+Bu dosyalar bu section'dan önce vardı. Ama gene de özet geçelim. (Not, bazı dosyalarda güncelleme yapılmış, mesela `c2-02-local-values.tf` içinde `eks_cluster_name` var)
+- c1-versions.tf
+    - `provider` olarak `aws`'yi verdiğimiz. region'ı seçtiğimiz yer
+- c2-01-generic-variables.tf
+    - genel variable tanımlarını yapmışız. region, envrionment isimleri var. Default değerleri de bulunmakta
+- c2-02-local-values.tf
+    - local variable oluşturduğumz dosya.
+    - common_tag
+    - eks_cluster_name
+    - name
+- c3-01-vpc-variables.tf
+    - vpc module'ü için kullandığımız variable tanımlamalarının yapıldığı yer.
+    - private-public subnetler
+    - nat gateway olsun mu ?
+    - route table falan
+- c3-02-vpc-module.tf
+    - vpc modülünün kendisi var.
+- c3-03-vpc-outputs.tf
+    - vpc modülü'den istediğimiz outputları tanımlıyoruz.
+- c4-01-ec2bastion-variables.tf
+    - bastionhost değerleri için variable var.
+    - t3.micro default
+    - key-pair name
+- c4-02-ec2bastion-outputs.tf
+    - bastion host'a ait olan IP ve ID değerlerini logluyoruz.
+- c4-03-ec2bastion-securitygroups.tf
+    - `terraform-aws-modules/security-group/aws`
+    - bastion host için security group oluşturuyoruz. MODULE, resource değil
+    - incoming requestler için ssh'a izin veriyor sadece
+    - outgoing request için hepsi açık.
+    - vpc_id'yi parametre olarak alıyor.
+- c4-04-ami-datasource.tf
+    - burada `data` kullanıyoruz, resource değil.
+    - amacımız en yeni ec2 ami değerini bulmak.
+- c4-05-ec2bastion-instance.tf
+    - `terraform-aws-modules/ec2-instance/aws`
+    - ec2 instance için module kullanıyoruz.
+    - parametreler
+        - vpc_security_group_id
+        - instace_type
+        - key_name (SSH için)
+        - ami değeri
+        - public_subnet değeri. moduleden alıyoruz. (array'in ilk elemanı)
+- c4-06-ec2bastion-elasticip.tf
+    - resource kullanıyoruz. `aws_eip`
+    - bashtion host için elastic ip almamya çalışıyoruz.
+    - parametreler
+        - depends_on; ec2 ve vpc var
+        - ec2 instance'ın id değeri
+        - `vpc = true` diye birşey vermişiz, bu nedir acaba
+- c4-07-ec2bastion-provisioners.tf
+    - `null_resource` var
+    - depends_on değerinde sadece ec2 var. eip olsa güzel olurmuş diye düşündüm ama parametre olarak alıyor zaten. host değeri için
+    - Daha öncesinden, key-pair oluşturmuşduk ve kendisi burada `private-key/eks-terraform-key.pem`
+    - connecion yaparken bunu kullanabiliyoruz. EC2'yi oluştururken key değeri bu key-pair ile aynıydı
+    - İkinci aşamada, bu dosyayı bağlandığımız EC2'ye upload ediyoruz
+    - gerekli izin yapısını ayarlıyoruz chmod ile (sudo chmod 400)
+    - `local-exec` ile local makinemizde çalışıyor ve burada yeni bir dosya oluşturuyor.

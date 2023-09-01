@@ -24,4 +24,4 @@ Bu section'da burayı anlatıyor olacağız. [github.com/terraform-on-aws-eks/08
 - [06 İlk Deploy (STEP 11-12)](./06/README.md)
     - 13 dk sürmüş işlem :D
     - deploy sonrasında parametre kontrolleri
-
+- [06_not Genel özet, yorum ve dosyalar](./06_not/README.md)
